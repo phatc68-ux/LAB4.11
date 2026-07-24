@@ -1,9 +1,9 @@
 package com.example.free;
+
 public abstract class Note {
-    protected String title;
-    protected String createdDate;
-    public Note() {
-    }
+
+    private String title;
+    private String createdDate;
     public String getTitle() {
         return title;
     }
@@ -12,6 +12,9 @@ public abstract class Note {
     }
     public String getCreatedDate() {
         return createdDate;
+    }
+    public void setCreatedDate(String createdDate) {
+        this.createdDate = createdDate;
     }
     public abstract void getSummary();
 

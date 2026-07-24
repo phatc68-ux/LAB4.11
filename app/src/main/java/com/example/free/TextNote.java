@@ -1,9 +1,17 @@
 package com.example.free;
 public class TextNote extends Note {
-    public String content;
-    public TextNote() {
+    private String content;
+    public void setContent(String content){
+        this.content = content;
     }
-    public void getSummary() {
-        System.out.println("Title: " + title + ", Date: " + createdDate + ", Content: " + content);
+    public String getContent(){
+        return content;
     }
+    @Override
+    public void getSummary(){
+
+        System.out.println("Title : " + getTitle() + " Date : " + getCreatedDate() + " Content : " + content);
+
+    }
+
 }
